@@ -1,0 +1,55 @@
+using UnityEngine;
+
+public class PlayerMovement : MonoBehaviour
+{
+    private Rigidbody2D rb;
+    [SerializeField] private float moveSpeed;
+    [SerializeField] private float jumpForce;
+
+    private float horizontalInput;
+
+    [SerializeField] private Transform cameraTarget;
+
+    [SerializeField] private Transform groundCheckPos;
+    [SerializeField] private Vector2 groundCheckSize;
+    [SerializeField] private LayerMask groundLayer;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        horizontalInput = Input.GetAxisRaw("Horizontal");
+
+        // jump
+        if((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+        && isGrounded()) {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        }
+
+        if((Input.GetKeyUp(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+        && rb.linearVelocity.y > 0) {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y/2);
+        }
+
+        cameraTarget.position = new Vector2(transform.position.x, cameraTarget.position.y);
+    }
+
+    void FixedUpdate() {
+        rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
+    }
+
+    private bool isGrounded() {
+        return Physics2D.OverlapBox(groundCheckPos.position, groundCheckSize, 0, groundLayer);
+    }
+
+    // prob have to delete before build
+    void OnDrawGizmosSelected() {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireCube(groundCheckPos.position, groundCheckSize);
+    }
+}
