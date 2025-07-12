@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
 
-        if((Input.GetKeyUp(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+        if((Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow))
         && rb.linearVelocity.y > 0) {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y/2);
         }
