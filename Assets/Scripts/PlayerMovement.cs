@@ -14,16 +14,32 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Vector2 groundCheckSize;
     [SerializeField] private LayerMask groundLayer;
 
+    private SpriteRenderer sr;
+    [SerializeField] private GameObject leftReach, rightReach;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
+        rightReach.SetActive(true);
+        leftReach.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
+        if(horizontalInput > 0) {
+            sr.flipX = false;
+            rightReach.SetActive(true);
+            leftReach.SetActive(false);
+        }
+        else if(horizontalInput < 0) {
+            sr.flipX = true;
+            leftReach.SetActive(true);
+            rightReach.SetActive(false);
+        }
 
         // jump
         if((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
