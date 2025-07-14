@@ -12,6 +12,7 @@ public class Meter : MonoBehaviour
     public static Meter instance {get; private set;}
 
     private bool awake = false;
+    public Transform humanPos;
 
     void Awake() {
         if(instance == null) {
