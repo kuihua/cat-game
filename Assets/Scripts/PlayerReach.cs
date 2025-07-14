@@ -17,8 +17,9 @@ public class PlayerReach : MonoBehaviour
     void Update()
     {
         if(Input.GetMouseButtonDown(0)) {
+            Vector2 playerVelocity = transform.parent.GetComponent<Rigidbody2D>().linearVelocity;
             foreach(KnockableObject ko in objectsInReach) {
-                ko.knockOver(direction);
+                ko.knockOver(direction + playerVelocity.x/4);
             }
             objectsInReach.Clear();
         }

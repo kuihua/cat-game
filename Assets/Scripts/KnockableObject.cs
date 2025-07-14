@@ -38,8 +38,10 @@ public class KnockableObject : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision) {
         // if(collision.gameObject.name == "Floor") {
-        //     Debug.Log(previousVelocity.magnitude + " " + rb.linearVelocity.magnitude);
-        Meter.instance.addValue(previousVelocity.magnitude);
+        if(previousVelocity != null) {
+            Debug.Log(previousVelocity.magnitude * rb.mass);
+        }
+        Meter.instance.addValue(previousVelocity.magnitude * rb.mass);
         // }
     }
 }
