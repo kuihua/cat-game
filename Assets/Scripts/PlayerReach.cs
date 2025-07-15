@@ -19,15 +19,17 @@ public class PlayerReach : MonoBehaviour
         if(Input.GetMouseButtonDown(0)) {
             Vector2 playerVelocity = transform.parent.GetComponent<Rigidbody2D>().linearVelocity;
             foreach(KnockableObject ko in objectsInReach) {
-                ko.knockOver(direction + playerVelocity.x/4);
+                // ko.knockOver(direction + playerVelocity.x/4);
+                ko.knockOver(playerVelocity, direction);
             }
-            objectsInReach.Clear();
+            // objectsInReach.Clear();
         }
     }
 
     void OnTriggerEnter2D(Collider2D collider) {
         KnockableObject ko = collider.GetComponent<KnockableObject>();
-        if(ko != null && !ko.knockedOver && !objectsInReach.Contains(ko)) {
+        // if(ko != null && !ko.knockedOver && !objectsInReach.Contains(ko)) {
+        if(ko != null && !objectsInReach.Contains(ko)) {
             objectsInReach.Add(ko);
         }
     }

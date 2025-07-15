@@ -36,6 +36,23 @@ public class KnockableObject : MonoBehaviour
         knockedOver = true;
     }
 
+    public void knockOver(Vector2 playerVelocity, float direction) {
+        PlatformCollisions.instance.disableCollisionWith(GetComponent<Collider2D>());
+        if(playerVelocity.magnitude == 0) {
+            rb.AddForce(new Vector2(direction * 5, 3), ForceMode2D.Impulse);
+        }
+        else {
+            rb.AddForce(playerVelocity * 2, ForceMode2D.Impulse);
+        }
+        if(Mathf.Abs(playerVelocity.x) < 1) {
+            rb.AddTorque(-1 * direction, ForceMode2D.Impulse);
+        }
+        else {
+            rb.AddTorque(-1 * playerVelocity.x, ForceMode2D.Impulse);
+        }
+        knockedOver = true;
+    }
+
     void OnCollisionEnter2D(Collision2D collision) {
         // if(collision.gameObject.name == "Floor") {
         float awakenessValue = previousVelocity.magnitude * rb.mass
