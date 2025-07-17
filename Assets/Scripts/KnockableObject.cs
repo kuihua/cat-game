@@ -7,6 +7,8 @@ public class KnockableObject : MonoBehaviour
     private Vector2 previousVelocity;
     private Vector2 lastRecordedVelocity;
 
+    public bool muffled = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,12 +23,12 @@ public class KnockableObject : MonoBehaviour
         //     knockOver(1);
         // }
 
-        if(knockedOver) {
-            if(lastRecordedVelocity != null) {
-                previousVelocity = lastRecordedVelocity;
-            }
-            lastRecordedVelocity = rb.linearVelocity;
+        // if(knockedOver) {
+        if(lastRecordedVelocity != null) {
+            previousVelocity = lastRecordedVelocity;
         }
+        lastRecordedVelocity = rb.linearVelocity;
+        // }
     }
 
     public void knockOver(float direction) {
@@ -58,6 +60,9 @@ public class KnockableObject : MonoBehaviour
         float awakenessValue = previousVelocity.magnitude * rb.mass
         * 10 / Mathf.Pow(Vector2.Distance(transform.position, Meter.instance.humanPos.position), 2);
         // * 5 / Vector2.Distance(transform.position, Meter.instance.humanPos.position);
+        if(muffled) {
+            awakenessValue /= 5;
+        }
         if(previousVelocity != null) {
             Debug.Log(awakenessValue);
         }
