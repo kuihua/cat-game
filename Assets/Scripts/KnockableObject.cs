@@ -58,7 +58,7 @@ public class KnockableObject : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision) {
         // if(collision.gameObject.name == "Floor") {
         float awakenessValue = previousVelocity.magnitude * rb.mass
-        * 10 / Mathf.Pow(Vector2.Distance(transform.position, Meter.instance.humanPos.position), 2);
+        * 5 / Mathf.Pow(Vector2.Distance(transform.position, Meter.instance.humanPos.position), 2);
         // * 5 / Vector2.Distance(transform.position, Meter.instance.humanPos.position);
         if(muffled) {
             awakenessValue /= 5;
