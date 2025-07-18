@@ -6,7 +6,7 @@ public class PlayerAnimation : MonoBehaviour
     private string currentState;
 
     private Rigidbody2D rb;
-    public bool swipe = false;
+    bool swipe = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
