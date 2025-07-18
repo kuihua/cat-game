@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2384ab595077341fba1d54af12cc3651
+guid: 60dcad1e20cb949a5ab3e2b8f0577271
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -112,9 +112,9 @@ TextureImporter:
       name: jump_animation_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 3
         y: 0
-        width: 41
+        width: 42
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -134,7 +134,7 @@ TextureImporter:
       name: jump_animation_1
       rect:
         serializedVersion: 2
-        x: 39
+        x: 51
         y: 0
         width: 42
         height: 32
@@ -156,7 +156,7 @@ TextureImporter:
       name: jump_animation_2
       rect:
         serializedVersion: 2
-        x: 79
+        x: 102
         y: 0
         width: 39
         height: 32
@@ -178,9 +178,9 @@ TextureImporter:
       name: jump_animation_3
       rect:
         serializedVersion: 2
-        x: 119
+        x: 147
         y: 0
-        width: 41
+        width: 42
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 01af016711a5a45ca9b88353c65f80b6
+guid: ac560ce1c42fd4674987634a10a81efd
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -103,9 +103,9 @@ TextureImporter:
       name: fall_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 4
         y: 0
-        width: 40
+        width: 41
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3d94a9ba8cce5451a8ac7e84063b99f0
+guid: 26255efc283474d6891d5889216bc7b9
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -103,9 +103,9 @@ TextureImporter:
       name: jump_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 3
         y: 0
-        width: 40
+        width: 42
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}

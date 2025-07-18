@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 55bc60ea0380740b1a1bc10b07fc8c61
+guid: e49b6d912a90f4dfb83d9a2b47b35b74
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -118,9 +118,9 @@ TextureImporter:
       name: swipe_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 7
         y: 0
-        width: 33
+        width: 34
         height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -140,7 +140,7 @@ TextureImporter:
       name: swipe_1
       rect:
         serializedVersion: 2
-        x: 39
+        x: 55
         y: 0
         width: 34
         height: 28
@@ -162,7 +162,7 @@ TextureImporter:
       name: swipe_2
       rect:
         serializedVersion: 2
-        x: 79
+        x: 96
         y: 0
         width: 41
         height: 28
@@ -184,7 +184,7 @@ TextureImporter:
       name: swipe_3
       rect:
         serializedVersion: 2
-        x: 119
+        x: 143
         y: 0
         width: 42
         height: 27
@@ -206,7 +206,7 @@ TextureImporter:
       name: swipe_4
       rect:
         serializedVersion: 2
-        x: 159
+        x: 192
         y: 0
         width: 41
         height: 28
@@ -228,7 +228,7 @@ TextureImporter:
       name: swipe_5
       rect:
         serializedVersion: 2
-        x: 199
+        x: 247
         y: 0
         width: 34
         height: 28

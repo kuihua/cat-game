@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 3d2a47b098dc741de93bb7c89ede1a72
+guid: eaa60b76c1e604ee0a1f1368784a3263
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9104348463550422359
-    second: walk2_0
+      213: -8296385383580801948
+    second: walk_0
   - first:
-      213: -771015959597477621
-    second: walk2_1
+      213: 3218353051568008401
+    second: walk_1
   - first:
-      213: 7803252948490417381
-    second: walk2_2
+      213: 6971375644381031630
+    second: walk_2
   - first:
-      213: 4784908882750943373
-    second: walk2_3
+      213: -3714987382563562326
+    second: walk_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -60,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 17.45
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -84,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -109,10 +109,32 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walk2_0
+      name: walk_0
       rect:
         serializedVersion: 2
-        x: 7
+        x: 0
+        y: 0
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4646ce323715ddc80800000000000000
+      internalID: -8296385383580801948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_1
+      rect:
+        serializedVersion: 2
+        x: 39
         y: 0
         width: 34
         height: 28
@@ -124,39 +146,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 75ddb41d0b4295e70800000000000000
-      internalID: 9104348463550422359
+      spriteID: 1dc61808c03e9ac20800000000000000
+      internalID: 3218353051568008401
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk2_1
+      name: walk_2
       rect:
         serializedVersion: 2
-        x: 55
-        y: 0
-        width: 34
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b01190cd11dcc45f0800000000000000
-      internalID: -771015959597477621
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk2_2
-      rect:
-        serializedVersion: 2
-        x: 100
+        x: 79
         y: 0
         width: 37
         height: 28
@@ -168,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5e47a479639ba4c60800000000000000
-      internalID: 7803252948490417381
+      spriteID: ecc242f663d4fb060800000000000000
+      internalID: 6971375644381031630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk2_3
+      name: walk_3
       rect:
         serializedVersion: 2
-        x: 151
+        x: 119
         y: 0
         width: 34
-        height: 27
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,8 +190,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d803bfef649676240800000000000000
-      internalID: 4784908882750943373
+      spriteID: aac9d3d88a6b17cc0800000000000000
+      internalID: -3714987382563562326
       vertices: []
       indices: 
       edges: []
@@ -210,10 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      walk2_0: 9104348463550422359
-      walk2_1: -771015959597477621
-      walk2_2: 7803252948490417381
-      walk2_3: 4784908882750943373
+      walk_0: -8296385383580801948
+      walk_1: 3218353051568008401
+      walk_2: 6971375644381031630
+      walk_3: -3714987382563562326
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
