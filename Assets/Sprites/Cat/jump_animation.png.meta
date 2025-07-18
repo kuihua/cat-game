@@ -112,9 +112,9 @@ TextureImporter:
       name: jump_animation_0
       rect:
         serializedVersion: 2
-        x: 3
+        x: 0
         y: 0
-        width: 42
+        width: 48
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -134,9 +134,9 @@ TextureImporter:
       name: jump_animation_1
       rect:
         serializedVersion: 2
-        x: 51
+        x: 48
         y: 0
-        width: 42
+        width: 48
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -156,9 +156,9 @@ TextureImporter:
       name: jump_animation_2
       rect:
         serializedVersion: 2
-        x: 102
+        x: 96
         y: 0
-        width: 39
+        width: 48
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -178,9 +178,9 @@ TextureImporter:
       name: jump_animation_3
       rect:
         serializedVersion: 2
-        x: 147
+        x: 144
         y: 0
-        width: 42
+        width: 48
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -200,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f8fcfa72c023f664d8df7cd4714188c3
     internalID: 0
     vertices: []
     indices: 
