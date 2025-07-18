@@ -4,6 +4,7 @@ public class PlatformCollisions : MonoBehaviour
 {
     private Platform[] platforms;
     public static PlatformCollisions instance {get; private set;}
+    [SerializeField] private Collider2D objectOnlyPlatform;
 
     void Awake() {
         if(instance == null) {
@@ -17,15 +18,16 @@ public class PlatformCollisions : MonoBehaviour
         platforms = FindObjectsByType<Platform>(FindObjectsSortMode.None);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    // // Update is called once per frame
+    // void Update()
+    // {
         
-    }
+    // }
 
     public void disableCollisionWith(Collider2D collider) {
         foreach(Platform platform in platforms) {
             Physics2D.IgnoreCollision(platform.GetComponent<Collider2D>(), collider, true);
         }
+        Physics2D.IgnoreCollision(objectOnlyPlatform, collider, true);
     }
 }
