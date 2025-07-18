@@ -6,6 +6,7 @@ public class AlarmClock : MonoBehaviour
     float ringCycleTime = 60;
     float timer = 30;
     bool ringing = false;
+    [SerializeField] private AudioClip alarmClip;
 
     // // Start is called once before the first execution of Update after the MonoBehaviour is created
     // void Start()
@@ -18,6 +19,7 @@ public class AlarmClock : MonoBehaviour
     {
         timer += Time.deltaTime;
         if(!ringing && timer > ringCycleTime) {
+            SoundFXManager.instance.PlaySoundFXClip(alarmClip, transform, 1f);
             timer = 0;
             ringing = true;
             Meter.instance.addValue(30);

@@ -16,7 +16,8 @@ public class PlayerReach : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0)) {
+        if(Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.K) || Input.GetKeyDown(KeyCode.X)) {
+            transform.parent.GetComponent<PlayerAnimation>().swipeAnimation();
             Vector2 playerVelocity = transform.parent.GetComponent<Rigidbody2D>().linearVelocity;
             foreach(KnockableObject ko in objectsInReach) {
                 // ko.knockOver(direction + playerVelocity.x/4);
