@@ -64,8 +64,8 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // prob have to delete before build
-    void OnDrawGizmosSelected() {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireCube(groundCheckPos.position, groundCheckSize);
-    }
+    // void OnDrawGizmosSelected() {
+    //     Gizmos.color = Color.yellow;
+    //     Gizmos.DrawWireCube(groundCheckPos.position, groundCheckSize);
+    // }
 }

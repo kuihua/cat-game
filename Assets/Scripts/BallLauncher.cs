@@ -30,8 +30,8 @@ public class BallLauncher : Interactable
     }
 
     // prob have to delete before build
-    void OnDrawGizmosSelected() {
-        Gizmos.color = Color.green;
-        Gizmos.DrawLine(ballSpawnPos.position, (Vector2)ballSpawnPos.position + ballDirection);
-    }
+    // void OnDrawGizmosSelected() {
+    //     Gizmos.color = Color.green;
+    //     Gizmos.DrawLine(ballSpawnPos.position, (Vector2)ballSpawnPos.position + ballDirection);
+    // }
 }
