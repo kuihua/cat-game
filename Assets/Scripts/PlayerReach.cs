@@ -7,10 +7,13 @@ public class PlayerReach : MonoBehaviour
     private List<KnockableObject> objectsInReach;
     [SerializeField] private int direction;
 
+    private List<Interactable> interactables;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         objectsInReach = new List<KnockableObject>();
+        interactables = new List<Interactable>();
     }
 
     // Update is called once per frame
@@ -24,14 +27,20 @@ public class PlayerReach : MonoBehaviour
                 ko.knockOver(playerVelocity, direction);
             }
             // objectsInReach.Clear();
+            foreach(Interactable iobj in interactables) {
+                iobj.interact();
+            }
         }
     }
 
     void OnTriggerEnter2D(Collider2D collider) {
         KnockableObject ko = collider.GetComponent<KnockableObject>();
-        // if(ko != null && !ko.knockedOver && !objectsInReach.Contains(ko)) {
         if(ko != null && !objectsInReach.Contains(ko)) {
             objectsInReach.Add(ko);
+        }
+        Interactable iobj = collider.GetComponent<Interactable>();
+        if(iobj != null && !interactables.Contains(iobj)) {
+            interactables.Add(iobj);
         }
     }
 
@@ -39,6 +48,10 @@ public class PlayerReach : MonoBehaviour
         KnockableObject ko = collider.GetComponent<KnockableObject>();
         if(ko != null && objectsInReach.Contains(ko)) {
             objectsInReach.Remove(ko);
+        }
+        Interactable iobj = collider.GetComponent<Interactable>();
+        if(iobj != null && interactables.Contains(iobj)) {
+            interactables.Remove(iobj);
         }
     }
 }
