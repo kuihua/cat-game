@@ -61,7 +61,7 @@ public class KnockableObject : MonoBehaviour
         * 5 / Mathf.Pow(Vector2.Distance(transform.position, Meter.instance.humanPos.position), 2);
         // * 5 / Vector2.Distance(transform.position, Meter.instance.humanPos.position);
         if(muffled) {
-            awakenessValue /= 5;
+            awakenessValue /= 8;
         }
         if(previousVelocity != null) {
             Debug.Log(awakenessValue);
