@@ -7,7 +7,7 @@ public class BallLauncher : Interactable
     [SerializeField] private Vector2 ballDirection;
     [SerializeField] private float ballSpeed;
 
-    float ballsLeft = 5;
+    float ballsLeft = 3;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
