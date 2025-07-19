@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: cec68faa6c80d3c45a3077b121919bbc
+guid: c45e625ba8d6e064aab49ce91caacb36
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5180526293898299999
-    second: ceiling fan_0
+      213: 8203057798723071757
+    second: ceilingFan_anim_0
+  - first:
+      213: -8229070121947042685
+    second: ceilingFan_anim_1
+  - first:
+      213: 2584567790425911760
+    second: ceilingFan_anim_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ceiling fan_0
+      name: ceilingFan_anim_0
       rect:
         serializedVersion: 2
-        x: 71
-        y: 129
-        width: 78
-        height: 44
+        x: 0
+        y: 0
+        width: 551
+        height: 175
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1a5fe9688c21b18b0800000000000000
-      internalID: -5180526293898299999
+      spriteID: d0fe2e43b9d17d170800000000000000
+      internalID: 8203057798723071757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceilingFan_anim_1
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 0
+        width: 551
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38ce095d2587ccd80800000000000000
+      internalID: -8229070121947042685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceilingFan_anim_2
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 0
+        width: 551
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d1b04636ba3ed320800000000000000
+      internalID: 2584567790425911760
       vertices: []
       indices: 
       edges: []
@@ -125,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 245be83557642af418e55b783dfbeadc
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ceiling fan_0: -5180526293898299999
+      ceilingFan_anim_0: 8203057798723071757
+      ceilingFan_anim_1: -8229070121947042685
+      ceilingFan_anim_2: 2584567790425911760
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
